@@ -204,8 +204,8 @@ ggplotly(fcst_plt)
 cap1 <- paste0("In this chart we can see the histogram of all ",symbol," daily closings. The median close is: $", median(df$Close))
 cap2 <- paste0("The chart for this slide illustrates the historical closings for each day and the respective trend for ", symbol, ".")
 cap3 <- paste0("Here we can see the historical closings for each day of each year and the respective trend of ", symbol, " stock price closings.")
-cap4 <- paste0("The Monthly Boxplot's show the density for variances, the spread and medain of the closings of each respective month for", symbol)
-cap5 <- paste0("This is the projected one year forecasts for ", symbol)
+cap4 <- paste0("The Monthly Boxplot's show the density for variances, the spread and medain of the closings of each respective month for ", symbol, ".")
+cap5 <- paste0("This is the projected one year forecasts for ", symbol, ".")
 cap6 <- paste0("In this illustration we can see the ", symbol, " forecast components.")
 myftr <- paste0("Contains confidential ", symbol," company information (Not really...). Not for external use or disclosure without proper authorization. Created on: ", Sys.Date())
 median_close <- paste0("The median close is: $", median(df$Close), ". Yesterday's close of $", 
@@ -233,7 +233,7 @@ my_ppt2 <- on_slide( x= my_ppt, index= 1) %>%
   
   #Slide 2  
   add_slide(., layout= "Title and Content", master= "Circuit") %>%
-  ph_with_text(type = "title", index=1,str = paste0("The Latest Available ", symbol, "Stock Price Summary: ")) %>%
+  ph_with_text(type = "title", index=1,str = paste0("The Latest Available ", symbol, " Stock Price Summary: ")) %>%
   ph_with(., yesterday, location = ph_location_type(type = "body"), use_loc_size = TRUE ) %>%
   
   # Slide 3
