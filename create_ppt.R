@@ -279,3 +279,5 @@ my_ppt2 <- on_slide( x= my_ppt, index= 1) %>%
           location = ph_location_type(type = "body", index=1), use_loc_size = FALSE ) %>%
   print(., target="StocksReport.pptx") %>%
   invisible()
+
+
